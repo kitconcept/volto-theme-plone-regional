@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ui.basic.segment.header-wrapper {
+  background-color: #0083be;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.header-last {
+  margin-bottom: 82px;
+}
+.ui.secondary.vertical.segment.breadcrumbs {
+  display: none;
+}
+
+.field.searchbox {
+  background-color: #fff;
+  width: 189px;
+  padding: 5px 5px 5px 16px;
+  border: none;
+}
+.tools-search-wrapper {
+  margin-right: 15px;
+}
+.mobile-menu {
+  background-color: #0083be;
+}
+.ui.secondary.pointing.menu .active.item {
+  background-color: transparent;
+  box-shadow: none;
+  border-color: #fff;
+  font-weight: normal;
+  &:hover {
+    border-color: #fff;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .ui.basic.segment .header .tools-search-wrapper {
+    display: none;
+  }
+}
+.mobile-menu-nav .ui.pointing.secondary.stackable.menu .item {
+  display: flex;
+  font-size: 14px;
+  justify-content: center;
+  line-height: 1.25;
+  padding: 7px 11px;
+  // border-bottom: 4px;
+  margin-left: 31px;
+}
+.navigation .ui.secondary.pointing.menu .item,
+.tools .ui.secondary.pointing.menu .item {
+  color: #fff;
+  text-transform: none;
+  &:hover {
+    color: #fff;
+  }
+}
+//
+
+@media only screen and (max-width: 991px) {
+  .ui.basic.segment .header .logo-nav-wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.logo {
+  img {
+    width: 158px;
+    height: 40px;
+  }
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background: #fff;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background: #fff;
+}
+.ui.menu .text.item > *,
+.ui.menu .item > a:not(.ui),
+.ui.menu .item > p:only-child {
+  color: #fff;
+}
+.ui.inverted.list .item a:not(.ui) {
+  font-size: 16px;
+}
+.ui.padded.segment.vertical.segment,
+.ui[class*='very padded'].vertical.segment {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+//#####################################################################################1c2331;
+//FOOTER
+.ui.inverted.grey.segment {
+  background-color: #0083be !important;
+  color: #ffffff !important;
+}
