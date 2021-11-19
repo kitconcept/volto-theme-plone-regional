@@ -7,6 +7,8 @@ RUN ./bin/pip install "plone.volto==3.1.0a5" --use-deprecated legacy-resolver
 ENV SETUP_CONTENT=True
 ENV ADDITIONAL_PROFILES=plone.volto:demo
 
+USER plone
+
 RUN rm -Rf /app/var &&\
     mkdir -p /app/var/filestorage /app/var/blobstorage /app/var/cache /app/var/log &&\
     /app/docker-entrypoint.sh create-volto
